@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.bbortt</groupId>
@@ -29,7 +30,7 @@
         <jackson-databind-version>2.9.9</jackson-databind-version>
         <jakarta-xml-bind-api-version>2.3.2</jakarta-xml-bind-api-version>
         <jaxb-runtime-version>2.4.0-b180830.0438</jaxb-runtime-version>
-        
+
         <!-- Plugins -->
         <maven-jar-plugin-version>3.1.2</maven-jar-plugin-version>
         <maven-javadoc-plugin-version>3.1.0</maven-javadoc-plugin-version>
@@ -37,10 +38,15 @@
     </properties>
 
     <dependencies>
-		<!-- OpenJFX -->
+        <!-- OpenJFX -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
+            <version>${openjfx-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
             <version>${openjfx-version}</version>
         </dependency>
 
@@ -50,7 +56,7 @@
             <artifactId>jackson-databind</artifactId>
             <version>${jackson-databind-version}</version>
         </dependency>
-        
+
         <!-- JAXB -->
         <dependency>
             <groupId>jakarta.xml.bind</groupId>
@@ -62,8 +68,8 @@
             <artifactId>jaxb-runtime</artifactId>
             <version>${jaxb-runtime-version}</version>
         </dependency>
-    
-		<!-- Test scoped dependencies -->
+
+        <!-- Test scoped dependencies -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
